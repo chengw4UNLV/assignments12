@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Oraneko Portfolio - Selected Works</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Cormorant+Garamond:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FCFAF6;
+    color: #3E4338;
+    font-family: Arial, sans-serif;
+}
+a {
+    color: #3E4338;
+    text-decoration: none;
+}
+header {
+    width: 90%;
+    max-width: 1280px;
+    margin: 32px auto;
+    display: flex;
+}
+.logo {
+    width: 50%;
+    font: 24pt/1.2em "Cormorant Garamond", serif;
+    color: #BD6E4B;
+}
+#navigation {
+    width: 50%;
+    text-align: right;
+}
+#navigation a {
+    margin-left: 32px;
+}
+#navigation a:hover {
+    color: #BD6E4B;
+}
+.active {
+    color: #BD6E4B;
+    border-bottom: 1px solid #BD6E4B;
+    padding-bottom: 6px;
+}
+main {
+    width: 90%;
+    max-width: 1280px;
+    margin: 70px auto 100px auto;
+}
+main h1 {
+    font: 48pt/1.2em "Cormorant Garamond", serif;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    width: 46%;
+    margin: 0 2% 36px 2%;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figcaption {
+    font-size: 11pt;
+    color: #7D7E75;
+    margin-top: 10px;
+}
+footer {
+    background: #E9EEDF;
+    padding: 50px 5%;
+}
+footer h2 {
+    font: 26pt/1.3em "Cormorant Garamond", serif;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+footer p {
+    font-size: 9pt;
+    color: #7D7E75;
+}
+@media only screen and (max-width: 750px) {
+    header {
+        display: block;
+        width: 88%;
+        margin: 24px auto;
+    }
+    .logo {
+        display: block;
+        width: 100%;
+        margin-bottom: 28px;
+    }
+    #navigation {
+        width: 100%;
+        text-align: left;
+    }
+    #navigation a {
+        margin-left: 0;
+        margin-right: 28px;
+    }
+    main {
+        width: 88%;
+        margin: 50px auto 60px auto;
+    }
+    main h1 {
+        font: 36pt/1.2em "Cormorant Garamond", serif;
+    }
+    #gallery {
+        display: block;
+    }
+    figure {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    footer {
+        padding: 38px 6%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <a class="logo" href="index.htm">Oraneko</a>
+    <div id="navigation">
+        <a href="index.htm">Home</a>
+        <a class="active" href="portfolio.htm">Portfolio</a>
+    </div>
+</header>
+<main>
+    <h1>Selected works</h1>
+    <div id="gallery">
+        <figure>
+            <a href="art1.png">
+                <img src="art1.png" alt="Oraneko artwork 1">
+            </a>
+        </figure>
+        <figure>
+            <a href="art2.png">
+                <img src="art2.png" alt="Oraneko artwork 2">
+            </a>
+        </figure>
+        <figure>
+            <a href="art3.png">
+                <img src="art3.png" alt="Oraneko artwork 3">
+            </a>
+        </figure>
+        <figure>
+            <a href="art4.png">
+                <img src="art4.png" alt="Oraneko artwork 4">
+            </a>
+        </figure>
+        <figure>
+            <a href="art5.png">
+                <img src="art5.png" alt="Oraneko artwork 5">
+            </a>
+        </figure>
+        <figure>
+            <a href="art6.png">
+                <img src="art6.png" alt="Oraneko artwork 6">
+            </a>
+        </figure>
+    </div>
+</main>
+<footer>
+    <h2>Thank you for wandering by.</h2>
+    <p>&copy; Oraneko</p>
+</footer>
+</body>
+</html>

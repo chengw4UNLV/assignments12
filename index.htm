@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Oraneko Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Cormorant+Garamond:wght@400;600&amp;display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FCFAF6;
+    color: #3E4338;
+    font-family: Arial, sans-serif;
+}
+a {
+    color: #3E4338;
+    text-decoration: none;
+}
+header {
+    width: 90%;
+    max-width: 1280px;
+    margin: 32px auto;
+    display: flex;
+}
+.logo {
+    width: 50%;
+    font: 24pt/1.2em "Cormorant Garamond", serif;
+    color: #BD6E4B;
+}
+#navigation {
+    width: 50%;
+    text-align: right;
+}
+#navigation a {
+    margin-left: 32px;
+}
+#navigation a:hover {
+    color: #BD6E4B;
+}
+.active {
+    color: #BD6E4B;
+    border-bottom: 1px solid #BD6E4B;
+    padding-bottom: 6px;
+}
+main {
+    width: 90%;
+    max-width: 1280px;
+    margin: 80px auto 120px auto;
+    display: flex;
+}
+#intro {
+    width: 38%;
+}
+#intro h1 {
+    font: 72pt/1em "Cormorant Garamond", serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.subtitle {
+    font-size: 14pt;
+    margin-bottom: 32px;
+}
+#intro-text {
+    font-size: 13pt;
+    line-height: 1.8em;
+    color: #7D7E75;
+    max-width: 390px;
+}
+#button2 {
+    width: 130px;
+    height: 38px;
+    border: none;
+    border-radius: 24px;
+    background: #E9EEDF;
+    margin-top: 28px;
+    font-size: 10pt;
+}
+#button2:hover {
+    box-shadow: 2px 3px 6px darkgray;
+}
+#social {
+    width: 62%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+#social a {
+    width: 36%;
+    height: 58px;
+    background: #F5C1A5;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-bottom: 28px;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+}
+#social a:hover {
+    background: #EDB394;
+}
+footer {
+    background: #E9EEDF;
+    padding: 50px 5%;
+}
+footer h2 {
+    font: 26pt/1.3em "Cormorant Garamond", serif;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+footer p {
+    font-size: 9pt;
+    color: #7D7E75;
+}
+@media only screen and (max-width: 750px) {
+    header {
+        display: block;
+        width: 88%;
+        margin: 24px auto;
+    }
+    .logo {
+        display: block;
+        width: 100%;
+        margin-bottom: 28px;
+    }
+    #navigation {
+        width: 100%;
+        text-align: left;
+    }
+    #navigation a {
+        margin-left: 0;
+        margin-right: 28px;
+    }
+    main {
+        display: block;
+        width: 88%;
+        margin: 65px auto 40px auto;
+    }
+    #intro {
+        width: 100%;
+    }
+    #intro h1 {
+        font: 54pt/1em "Cormorant Garamond", serif;
+    }
+    .subtitle {
+        font-size: 12pt;
+    }
+    #intro-text {
+        font-size: 12pt;
+        line-height: 1.7em;
+        width: 100%;
+    }
+    #social {
+        display: block;
+        width: 100%;
+        padding-top: 42px;
+    }
+
+    #social a {
+        width: 82%;
+        height: 54px;
+        margin: 0 auto 26px auto;
+        padding-left: 6%;
+    }
+
+    footer {
+        padding: 38px 6%;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <a class="logo" href="index.htm">Oraneko</a>
+    <div id="navigation">
+        <a class="active" href="index.htm">Home</a>
+        <a href="portfolio.htm">Portfolio</a>
+    </div>
+</header>
+<main>
+    <div id="intro">
+        <h1>Oraneko</h1>
+        <p class="subtitle">Illustrator &amp; Visual Artist</p>
+        <p id="intro-text">Hi! I’m Oraneko, a digital illustrator who loves anime-style characters, bright colors, and cute designs.</p>
+        <button id="button2">Larger Text</button>
+    </div>
+    <div id="social">
+        <a href="#">TikTok</a>
+        <a href="#">X / Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="portfolio.htm">View My Work</a>
+    </div>
+</main>
+<footer>
+    <h2>Thank you for wandering by.</h2>
+    <p>&copy; Oraneko</p>
+</footer>
+<script>
+$('#button2').click(function() {
+    $("#intro-text").css("fontSize", "+=3pt");
+});
+</script>
+</body>
+</html>
