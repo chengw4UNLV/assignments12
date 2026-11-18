@@ -1,9 +1,16 @@
 <!doctype html>
 <html>
 <head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MVHR4QVH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <meta charset="UTF-8">
-<title>Oraneko Portfolio - Selected Works</title>
+<title>Oraneko Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Cormorant+Garamond:wght@400;600&amp;display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <style>
 * {
     margin: 0;
@@ -47,30 +54,58 @@ header {
 main {
     width: 90%;
     max-width: 1280px;
-    margin: 70px auto 100px auto;
+    margin: 80px auto 120px auto;
+    display: flex;
 }
-main h1 {
-    font: 48pt/1.2em "Cormorant Garamond", serif;
+#intro {
+    width: 38%;
+}
+#intro h1 {
+    font: 72pt/1em "Cormorant Garamond", serif;
     font-weight: 400;
-    margin-bottom: 42px;
+    margin-bottom: 12px;
 }
-#gallery {
+.subtitle {
+    font-size: 14pt;
+    margin-bottom: 32px;
+}
+#intro-text {
+    font-size: 13pt;
+    line-height: 1.8em;
+    color: #7D7E75;
+    max-width: 390px;
+}
+#button2 {
+    width: 130px;
+    height: 38px;
+    border: none;
+    border-radius: 24px;
+    background: #E9EEDF;
+    margin-top: 28px;
+    font-size: 10pt;
+}
+#button2:hover {
+    box-shadow: 2px 3px 6px darkgray;
+}
+#social {
+    width: 62%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 70px;
 }
-figure {
-    width: 46%;
-    margin: 0 2% 36px 2%;
+#social a {
+    width: 36%;
+    height: 58px;
+    background: #F5C1A5;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-bottom: 28px;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
 }
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-figcaption {
-    font-size: 11pt;
-    color: #7D7E75;
-    margin-top: 10px;
+#social a:hover {
+    background: #EDB394;
 }
 footer {
     background: #E9EEDF;
@@ -105,19 +140,37 @@ footer p {
         margin-right: 28px;
     }
     main {
-        width: 88%;
-        margin: 50px auto 60px auto;
-    }
-    main h1 {
-        font: 36pt/1.2em "Cormorant Garamond", serif;
-    }
-    #gallery {
         display: block;
+        width: 88%;
+        margin: 65px auto 40px auto;
     }
-    figure {
+    #intro {
         width: 100%;
-        margin: 0 0 30px 0;
     }
+    #intro h1 {
+        font: 54pt/1em "Cormorant Garamond", serif;
+    }
+    .subtitle {
+        font-size: 12pt;
+    }
+    #intro-text {
+        font-size: 12pt;
+        line-height: 1.7em;
+        width: 100%;
+    }
+    #social {
+        display: block;
+        width: 100%;
+        padding-top: 42px;
+    }
+
+    #social a {
+        width: 82%;
+        height: 54px;
+        margin: 0 auto 26px auto;
+        padding-left: 6%;
+    }
+
     footer {
         padding: 38px 6%;
     }
@@ -128,48 +181,32 @@ footer p {
 <header>
     <a class="logo" href="index.htm">Oraneko</a>
     <div id="navigation">
-        <a href="index.htm">Home</a>
-        <a class="active" href="portfolio.htm">Portfolio</a>
+        <a class="active" href="index.htm">Home</a>
+        <a href="portfolio.htm">Portfolio</a>
     </div>
 </header>
 <main>
-    <h1>Selected works</h1>
-    <div id="gallery">
-        <figure>
-            <a href="art1.png">
-                <img src="art1.png" alt="Oraneko artwork 1">
-            </a>
-        </figure>
-        <figure>
-            <a href="art2.png">
-                <img src="art2.png" alt="Oraneko artwork 2">
-            </a>
-        </figure>
-        <figure>
-            <a href="art3.png">
-                <img src="art3.png" alt="Oraneko artwork 3">
-            </a>
-        </figure>
-        <figure>
-            <a href="art4.png">
-                <img src="art4.png" alt="Oraneko artwork 4">
-            </a>
-        </figure>
-        <figure>
-            <a href="art5.png">
-                <img src="art5.png" alt="Oraneko artwork 5">
-            </a>
-        </figure>
-        <figure>
-            <a href="art6.png">
-                <img src="art6.png" alt="Oraneko artwork 6">
-            </a>
-        </figure>
+    <div id="intro">
+        <h1>Oraneko</h1>
+        <p class="subtitle">Illustrator &amp; Visual Artist</p>
+        <p id="intro-text">Hi! I’m Oraneko, a digital illustrator who loves anime-style characters, bright colors, and cute designs.</p>
+        <button id="button2">Larger Text</button>
+    </div>
+    <div id="social">
+        <a href="#">TikTok</a>
+        <a href="#">X / Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="portfolio.htm">View My Work</a>
     </div>
 </main>
 <footer>
     <h2>Thank you for wandering by.</h2>
     <p>&copy; Oraneko</p>
 </footer>
+<script>
+$('#button2').click(function() {
+    $("#intro-text").css("fontSize", "+=3pt");
+});
+</script>
 </body>
 </html>
